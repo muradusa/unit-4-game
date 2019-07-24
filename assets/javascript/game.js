@@ -1,4 +1,2 @@
 
-
-alert("Hello");
-$("empty-div").html("<p>Helloooo</p>");
+$(".empty-div").html("<p>Helloooo</p>").append("+ Bye");
