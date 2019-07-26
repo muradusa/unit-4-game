@@ -1,11 +1,12 @@
 
 var randomNumnber
 
-var totalScore;
+var totalScore = 0;
 var crystalOne;
 var crystalTwo;
 var crystalThree;
 var crystalFour;
+var newtotalScore;
 
 // Beginning of the game
 
@@ -36,6 +37,9 @@ console.log(four);
 $(".crystalOne").on("click", function () {
     var crystalOne = one;
     console.log(crystalOne);
+    var newtotalScore = totalScore + one;
+    $("#totalScore").text(newtotalScore);
+
 })
 $(".crystalTwo").on("click", function () {
     var crystalTwo = two;
@@ -52,5 +56,5 @@ $(".crystalFour").on("click", function () {
     console.log(crystalFour);
 })
 
-$("#totalScore").text(one);
+
 
